@@ -16,6 +16,25 @@
 		55950B641E8426A100ECF74F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55950B621E8426A100ECF74F /* LaunchScreen.storyboard */; };
 		55950B6F1E8426A100ECF74F /* KYChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 55950B6E1E8426A100ECF74F /* KYChatTests.m */; };
 		55950B7A1E8426A100ECF74F /* KYChatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 55950B791E8426A100ECF74F /* KYChatUITests.m */; };
+		55A8BB0B1E91720B0064E7F5 /* customSecurityPolocy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A8BADD1E91720B0064E7F5 /* customSecurityPolocy.m */; };
+		55A8BB0C1E91720B0064E7F5 /* YAAPIBaseRequestDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A8BADF1E91720B0064E7F5 /* YAAPIBaseRequestDataModel.m */; };
+		55A8BB0D1E91720B0064E7F5 /* YAAPIResponseErrorHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A8BAE11E91720B0064E7F5 /* YAAPIResponseErrorHandler.m */; };
+		55A8BB0E1E91720B0064E7F5 /* YAAPIURLRequestGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A8BAE31E91720B0064E7F5 /* YAAPIURLRequestGenerator.m */; };
+		55A8BB0F1E91720B0064E7F5 /* YAAppContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A8BAE51E91720B0064E7F5 /* YAAppContext.m */; };
+		55A8BB101E91720B0064E7F5 /* YACommonParamsGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A8BAE71E91720B0064E7F5 /* YACommonParamsGenerator.m */; };
+		55A8BB111E91720B0064E7F5 /* YASignatureGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A8BAE91E91720B0064E7F5 /* YASignatureGenerator.m */; };
+		55A8BB121E91720B0064E7F5 /* YABaseDataEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A8BAEC1E91720B0064E7F5 /* YABaseDataEngine.m */; };
+		55A8BB131E91720B0064E7F5 /* NSObject+YANetWorkingAutoCancel.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A8BAEF1E91720B0064E7F5 /* NSObject+YANetWorkingAutoCancel.m */; };
+		55A8BB141E91720B0064E7F5 /* NSString+UtilNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A8BAF11E91720B0064E7F5 /* NSString+UtilNetworking.m */; };
+		55A8BB151E91720B0064E7F5 /* UIDevice+UtilNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A8BAF31E91720B0064E7F5 /* UIDevice+UtilNetworking.m */; };
+		55A8BB161E91720B0064E7F5 /* YANetworkingAutoCancelRequests.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A8BAF51E91720B0064E7F5 /* YANetworkingAutoCancelRequests.m */; };
+		55A8BB171E91720B0064E7F5 /* FWZServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A8BAFA1E91720B0064E7F5 /* FWZServer.m */; };
+		55A8BB181E91720B0064E7F5 /* YAServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A8BAFD1E91720B0064E7F5 /* YAServer.m */; };
+		55A8BB191E91720B0064E7F5 /* YABaseServers.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A8BAFF1E91720B0064E7F5 /* YABaseServers.m */; };
+		55A8BB1A1E91720B0064E7F5 /* YAServerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A8BB011E91720B0064E7F5 /* YAServerFactory.m */; };
+		55A8BB1B1E91720B0064E7F5 /* YAAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A8BB031E91720B0064E7F5 /* YAAPIClient.m */; };
+		55A8BB1C1E91720B0064E7F5 /* CheckAppStroeDataEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A8BB061E91720B0064E7F5 /* CheckAppStroeDataEngine.m */; };
+		55A8BB1D1E91720B0064E7F5 /* TLNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A8BB0A1E91720B0064E7F5 /* TLNetworking.m */; };
 		8BFC42AD1E8E3ED30087423D /* KYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFC42AC1E8E3ED30087423D /* KYViewController.m */; };
 		8BFC42B41E8E418A0087423D /* UIColor+KYChat.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFC42B31E8E418A0087423D /* UIColor+KYChat.m */; };
 		8BFC42C31E8E473A0087423D /* KYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFC42C21E8E473A0087423D /* KYTableViewController.m */; };
@@ -83,6 +102,45 @@
 		55950B751E8426A100ECF74F /* KYChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KYChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55950B791E8426A100ECF74F /* KYChatUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYChatUITests.m; sourceTree = "<group>"; };
 		55950B7B1E8426A100ECF74F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55A8BADC1E91720B0064E7F5 /* customSecurityPolocy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customSecurityPolocy.h; sourceTree = "<group>"; };
+		55A8BADD1E91720B0064E7F5 /* customSecurityPolocy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customSecurityPolocy.m; sourceTree = "<group>"; };
+		55A8BADE1E91720B0064E7F5 /* YAAPIBaseRequestDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAAPIBaseRequestDataModel.h; sourceTree = "<group>"; };
+		55A8BADF1E91720B0064E7F5 /* YAAPIBaseRequestDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAAPIBaseRequestDataModel.m; sourceTree = "<group>"; };
+		55A8BAE01E91720B0064E7F5 /* YAAPIResponseErrorHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAAPIResponseErrorHandler.h; sourceTree = "<group>"; };
+		55A8BAE11E91720B0064E7F5 /* YAAPIResponseErrorHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAAPIResponseErrorHandler.m; sourceTree = "<group>"; };
+		55A8BAE21E91720B0064E7F5 /* YAAPIURLRequestGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAAPIURLRequestGenerator.h; sourceTree = "<group>"; };
+		55A8BAE31E91720B0064E7F5 /* YAAPIURLRequestGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAAPIURLRequestGenerator.m; sourceTree = "<group>"; };
+		55A8BAE41E91720B0064E7F5 /* YAAppContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAAppContext.h; sourceTree = "<group>"; };
+		55A8BAE51E91720B0064E7F5 /* YAAppContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAAppContext.m; sourceTree = "<group>"; };
+		55A8BAE61E91720B0064E7F5 /* YACommonParamsGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YACommonParamsGenerator.h; sourceTree = "<group>"; };
+		55A8BAE71E91720B0064E7F5 /* YACommonParamsGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YACommonParamsGenerator.m; sourceTree = "<group>"; };
+		55A8BAE81E91720B0064E7F5 /* YASignatureGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YASignatureGenerator.h; sourceTree = "<group>"; };
+		55A8BAE91E91720B0064E7F5 /* YASignatureGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YASignatureGenerator.m; sourceTree = "<group>"; };
+		55A8BAEB1E91720B0064E7F5 /* YABaseDataEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YABaseDataEngine.h; sourceTree = "<group>"; };
+		55A8BAEC1E91720B0064E7F5 /* YABaseDataEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YABaseDataEngine.m; sourceTree = "<group>"; };
+		55A8BAEE1E91720B0064E7F5 /* NSObject+YANetWorkingAutoCancel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YANetWorkingAutoCancel.h"; sourceTree = "<group>"; };
+		55A8BAEF1E91720B0064E7F5 /* NSObject+YANetWorkingAutoCancel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YANetWorkingAutoCancel.m"; sourceTree = "<group>"; };
+		55A8BAF01E91720B0064E7F5 /* NSString+UtilNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UtilNetworking.h"; sourceTree = "<group>"; };
+		55A8BAF11E91720B0064E7F5 /* NSString+UtilNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UtilNetworking.m"; sourceTree = "<group>"; };
+		55A8BAF21E91720B0064E7F5 /* UIDevice+UtilNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+UtilNetworking.h"; sourceTree = "<group>"; };
+		55A8BAF31E91720B0064E7F5 /* UIDevice+UtilNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+UtilNetworking.m"; sourceTree = "<group>"; };
+		55A8BAF41E91720B0064E7F5 /* YANetworkingAutoCancelRequests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANetworkingAutoCancelRequests.h; sourceTree = "<group>"; };
+		55A8BAF51E91720B0064E7F5 /* YANetworkingAutoCancelRequests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YANetworkingAutoCancelRequests.m; sourceTree = "<group>"; };
+		55A8BAF91E91720B0064E7F5 /* FWZServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWZServer.h; sourceTree = "<group>"; };
+		55A8BAFA1E91720B0064E7F5 /* FWZServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWZServer.m; sourceTree = "<group>"; };
+		55A8BAFC1E91720B0064E7F5 /* YAServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAServer.h; sourceTree = "<group>"; };
+		55A8BAFD1E91720B0064E7F5 /* YAServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAServer.m; sourceTree = "<group>"; };
+		55A8BAFE1E91720B0064E7F5 /* YABaseServers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YABaseServers.h; sourceTree = "<group>"; };
+		55A8BAFF1E91720B0064E7F5 /* YABaseServers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YABaseServers.m; sourceTree = "<group>"; };
+		55A8BB001E91720B0064E7F5 /* YAServerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAServerFactory.h; sourceTree = "<group>"; };
+		55A8BB011E91720B0064E7F5 /* YAServerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAServerFactory.m; sourceTree = "<group>"; };
+		55A8BB021E91720B0064E7F5 /* YAAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAAPIClient.h; sourceTree = "<group>"; };
+		55A8BB031E91720B0064E7F5 /* YAAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAAPIClient.m; sourceTree = "<group>"; };
+		55A8BB051E91720B0064E7F5 /* CheckAppStroeDataEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckAppStroeDataEngine.h; sourceTree = "<group>"; };
+		55A8BB061E91720B0064E7F5 /* CheckAppStroeDataEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckAppStroeDataEngine.m; sourceTree = "<group>"; };
+		55A8BB071E91720B0064E7F5 /* ServerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerConfig.h; sourceTree = "<group>"; };
+		55A8BB091E91720B0064E7F5 /* TLNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLNetworking.h; sourceTree = "<group>"; };
+		55A8BB0A1E91720B0064E7F5 /* TLNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLNetworking.m; sourceTree = "<group>"; };
 		8561F7B72D44ED9635C37681 /* Pods-KYChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KYChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-KYChat/Pods-KYChat.release.xcconfig"; sourceTree = "<group>"; };
 		8BFC42AB1E8E3ED30087423D /* KYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYViewController.h; sourceTree = "<group>"; };
 		8BFC42AC1E8E3ED30087423D /* KYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYViewController.m; sourceTree = "<group>"; };
@@ -254,6 +312,132 @@
 			path = KYChatUITests;
 			sourceTree = "<group>";
 		};
+		55A8BAD91E91720B0064E7F5 /* NetworkUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				55A8BADA1E91720B0064E7F5 /* http */,
+				55A8BB081E91720B0064E7F5 /* TLNetworking */,
+			);
+			path = NetworkUtilities;
+			sourceTree = "<group>";
+		};
+		55A8BADA1E91720B0064E7F5 /* http */ = {
+			isa = PBXGroup;
+			children = (
+				55A8BADB1E91720B0064E7F5 /* Assistants */,
+				55A8BAEA1E91720B0064E7F5 /* BaseEngine */,
+				55A8BAED1E91720B0064E7F5 /* Categories */,
+				55A8BAF61E91720B0064E7F5 /* Client */,
+				55A8BB041E91720B0064E7F5 /* DataEngine */,
+				55A8BB071E91720B0064E7F5 /* ServerConfig.h */,
+			);
+			path = http;
+			sourceTree = "<group>";
+		};
+		55A8BADB1E91720B0064E7F5 /* Assistants */ = {
+			isa = PBXGroup;
+			children = (
+				55A8BADC1E91720B0064E7F5 /* customSecurityPolocy.h */,
+				55A8BADD1E91720B0064E7F5 /* customSecurityPolocy.m */,
+				55A8BADE1E91720B0064E7F5 /* YAAPIBaseRequestDataModel.h */,
+				55A8BADF1E91720B0064E7F5 /* YAAPIBaseRequestDataModel.m */,
+				55A8BAE01E91720B0064E7F5 /* YAAPIResponseErrorHandler.h */,
+				55A8BAE11E91720B0064E7F5 /* YAAPIResponseErrorHandler.m */,
+				55A8BAE21E91720B0064E7F5 /* YAAPIURLRequestGenerator.h */,
+				55A8BAE31E91720B0064E7F5 /* YAAPIURLRequestGenerator.m */,
+				55A8BAE41E91720B0064E7F5 /* YAAppContext.h */,
+				55A8BAE51E91720B0064E7F5 /* YAAppContext.m */,
+				55A8BAE61E91720B0064E7F5 /* YACommonParamsGenerator.h */,
+				55A8BAE71E91720B0064E7F5 /* YACommonParamsGenerator.m */,
+				55A8BAE81E91720B0064E7F5 /* YASignatureGenerator.h */,
+				55A8BAE91E91720B0064E7F5 /* YASignatureGenerator.m */,
+			);
+			path = Assistants;
+			sourceTree = "<group>";
+		};
+		55A8BAEA1E91720B0064E7F5 /* BaseEngine */ = {
+			isa = PBXGroup;
+			children = (
+				55A8BAEB1E91720B0064E7F5 /* YABaseDataEngine.h */,
+				55A8BAEC1E91720B0064E7F5 /* YABaseDataEngine.m */,
+			);
+			path = BaseEngine;
+			sourceTree = "<group>";
+		};
+		55A8BAED1E91720B0064E7F5 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				55A8BAEE1E91720B0064E7F5 /* NSObject+YANetWorkingAutoCancel.h */,
+				55A8BAEF1E91720B0064E7F5 /* NSObject+YANetWorkingAutoCancel.m */,
+				55A8BAF01E91720B0064E7F5 /* NSString+UtilNetworking.h */,
+				55A8BAF11E91720B0064E7F5 /* NSString+UtilNetworking.m */,
+				55A8BAF21E91720B0064E7F5 /* UIDevice+UtilNetworking.h */,
+				55A8BAF31E91720B0064E7F5 /* UIDevice+UtilNetworking.m */,
+				55A8BAF41E91720B0064E7F5 /* YANetworkingAutoCancelRequests.h */,
+				55A8BAF51E91720B0064E7F5 /* YANetworkingAutoCancelRequests.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		55A8BAF61E91720B0064E7F5 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				55A8BAF71E91720B0064E7F5 /* Servers */,
+				55A8BB021E91720B0064E7F5 /* YAAPIClient.h */,
+				55A8BB031E91720B0064E7F5 /* YAAPIClient.m */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		55A8BAF71E91720B0064E7F5 /* Servers */ = {
+			isa = PBXGroup;
+			children = (
+				55A8BAF81E91720B0064E7F5 /* FWZ */,
+				55A8BAFB1E91720B0064E7F5 /* YA */,
+				55A8BAFE1E91720B0064E7F5 /* YABaseServers.h */,
+				55A8BAFF1E91720B0064E7F5 /* YABaseServers.m */,
+				55A8BB001E91720B0064E7F5 /* YAServerFactory.h */,
+				55A8BB011E91720B0064E7F5 /* YAServerFactory.m */,
+			);
+			path = Servers;
+			sourceTree = "<group>";
+		};
+		55A8BAF81E91720B0064E7F5 /* FWZ */ = {
+			isa = PBXGroup;
+			children = (
+				55A8BAF91E91720B0064E7F5 /* FWZServer.h */,
+				55A8BAFA1E91720B0064E7F5 /* FWZServer.m */,
+			);
+			path = FWZ;
+			sourceTree = "<group>";
+		};
+		55A8BAFB1E91720B0064E7F5 /* YA */ = {
+			isa = PBXGroup;
+			children = (
+				55A8BAFC1E91720B0064E7F5 /* YAServer.h */,
+				55A8BAFD1E91720B0064E7F5 /* YAServer.m */,
+			);
+			path = YA;
+			sourceTree = "<group>";
+		};
+		55A8BB041E91720B0064E7F5 /* DataEngine */ = {
+			isa = PBXGroup;
+			children = (
+				55A8BB051E91720B0064E7F5 /* CheckAppStroeDataEngine.h */,
+				55A8BB061E91720B0064E7F5 /* CheckAppStroeDataEngine.m */,
+			);
+			path = DataEngine;
+			sourceTree = "<group>";
+		};
+		55A8BB081E91720B0064E7F5 /* TLNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				55A8BB091E91720B0064E7F5 /* TLNetworking.h */,
+				55A8BB0A1E91720B0064E7F5 /* TLNetworking.m */,
+			);
+			path = TLNetworking;
+			sourceTree = "<group>";
+		};
 		8BFC429F1E8E3D320087423D /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -370,6 +554,7 @@
 		8BFC42B01E8E411B0087423D /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				55A8BAD91E91720B0064E7F5 /* NetworkUtilities */,
 				8BFC42B11E8E411B0087423D /* UIUtilities */,
 			);
 			path = Utilities;
@@ -850,22 +1035,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55A8BB131E91720B0064E7F5 /* NSObject+YANetWorkingAutoCancel.m in Sources */,
 				8BFC43211E8E562A0087423D /* UIImagePickerController+Fixed.m in Sources */,
 				8BFC42C61E8E49B20087423D /* KYConversationViewController.m in Sources */,
+				55A8BB1C1E91720B0064E7F5 /* CheckAppStroeDataEngine.m in Sources */,
+				55A8BB181E91720B0064E7F5 /* YAServer.m in Sources */,
 				8BFC43271E8E562A0087423D /* UIView+Extensions.m in Sources */,
 				8BFC431A1E8E562A0087423D /* NSFileManager+Paths.m in Sources */,
+				55A8BB0B1E91720B0064E7F5 /* customSecurityPolocy.m in Sources */,
+				55A8BB0E1E91720B0064E7F5 /* YAAPIURLRequestGenerator.m in Sources */,
+				55A8BB0C1E91720B0064E7F5 /* YAAPIBaseRequestDataModel.m in Sources */,
+				55A8BB191E91720B0064E7F5 /* YABaseServers.m in Sources */,
 				8BFC431D1E8E562A0087423D /* UIBarButtonItem+Action.m in Sources */,
 				8BFC431E1E8E562A0087423D /* UIButton+TLChat.m in Sources */,
+				55A8BB161E91720B0064E7F5 /* YANetworkingAutoCancelRequests.m in Sources */,
 				8BFC42DE1E8E4FCF0087423D /* KYFriendSearchViewController.m in Sources */,
+				55A8BB151E91720B0064E7F5 /* UIDevice+UtilNetworking.m in Sources */,
+				55A8BB1B1E91720B0064E7F5 /* YAAPIClient.m in Sources */,
 				8BFC42C31E8E473A0087423D /* KYTableViewController.m in Sources */,
+				55A8BB171E91720B0064E7F5 /* FWZServer.m in Sources */,
+				55A8BB141E91720B0064E7F5 /* NSString+UtilNetworking.m in Sources */,
 				8BFC42D71E8E4DFD0087423D /* KYTabBarController.m in Sources */,
 				8BFC43241E8E562A0087423D /* UINavigationItem+Fixed.m in Sources */,
 				8BFC42E11E8E503B0087423D /* KYFrieldsViewController.m in Sources */,
 				8BFC42CD1E8E4AD40087423D /* KYMenuViewController.m in Sources */,
+				55A8BB121E91720B0064E7F5 /* YABaseDataEngine.m in Sources */,
 				8BFC42E41E8E53160087423D /* KYNavigationController.m in Sources */,
 				8BFC42D41E8E4B8B0087423D /* KYMineViewController.m in Sources */,
 				8BFC42AD1E8E3ED30087423D /* KYViewController.m in Sources */,
 				8BFC42B41E8E418A0087423D /* UIColor+KYChat.m in Sources */,
+				55A8BB1D1E91720B0064E7F5 /* TLNetworking.m in Sources */,
 				8BFC43231E8E562A0087423D /* UINavigationController+StackManager.m in Sources */,
 				8BFC43181E8E562A0087423D /* NSDate+Extension.m in Sources */,
 				55950B5C1E8426A100ECF74F /* ViewController.m in Sources */,
@@ -875,12 +1074,17 @@
 				8BFC431C1E8E562A0087423D /* NSString+UrlEncode.m in Sources */,
 				8BFC431B1E8E562A0087423D /* NSString+PinYin.m in Sources */,
 				8BFC43191E8E562A0087423D /* NSDate+Utilities.m in Sources */,
+				55A8BB111E91720B0064E7F5 /* YASignatureGenerator.m in Sources */,
 				8BFC42DA1E8E4E440087423D /* KYRootViewController.m in Sources */,
 				8BFC43261E8E562A0087423D /* UITableView+TLChat.m in Sources */,
 				55950B561E8426A100ECF74F /* main.m in Sources */,
+				55A8BB101E91720B0064E7F5 /* YACommonParamsGenerator.m in Sources */,
+				55A8BB0F1E91720B0064E7F5 /* YAAppContext.m in Sources */,
 				8BFC431F1E8E562A0087423D /* UIImage+Color.m in Sources */,
 				8BFC43221E8E562A0087423D /* UINavigationController+JZExtension.m in Sources */,
 				8BFC43201E8E562A0087423D /* UIImage+Size.m in Sources */,
+				55A8BB0D1E91720B0064E7F5 /* YAAPIResponseErrorHandler.m in Sources */,
+				55A8BB1A1E91720B0064E7F5 /* YAServerFactory.m in Sources */,
 				8BFC42E71E8E53610087423D /* UIFont+KYChat.m in Sources */,
 				8BFC42D01E8E4B250087423D /* KYDiscoverViewController.m in Sources */,
 			);
