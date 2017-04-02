@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F9E38C910835F9F432C44365A50BDB32A9473CBD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F9E38C910835F9F432C44365A50BDB32A9473CBD" : 9223372036854775807,
+    "8881121B1C2D291DE7AFF8F765A9CB9F900CC50D" : 9223372036854775807,
+    "5FEC8DB463D12F28933524688C233A05792317DA" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F2770129-4AB7-4151-96C7-C26BDF0EDEDA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F9E38C910835F9F432C44365A50BDB32A9473CBD" : "workSpace\/",
+    "8881121B1C2D291DE7AFF8F765A9CB9F900CC50D" : "workSpace\/KYChat\/",
+    "5FEC8DB463D12F28933524688C233A05792317DA" : "KYChat\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "KYChat",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "KYChat.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kaia7\/KYChat.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5FEC8DB463D12F28933524688C233A05792317DA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kaia7\/KYChat.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8881121B1C2D291DE7AFF8F765A9CB9F900CC50D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kaia7\/KYChat.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F9E38C910835F9F432C44365A50BDB32A9473CBD"
+    }
+  ]
+}

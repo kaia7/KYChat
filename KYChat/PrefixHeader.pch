@@ -1,0 +1,54 @@
+//
+//  PrefixHeader.pch
+//  KYChat
+//
+//  Created by ITD on 2017/3/31.
+//  Copyright © 2017年 凯  赵. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "KYMacros.h"            // 宏
+/*
+#import "KYEnumerate.h"         // 枚举
+#import "KYEventStatistics.h"   // 数据统计
+#import "KYHost.h"              // 网络地址
+
+#import "UIColor+KYChat.h"      // 颜色
+#import "UIFont+KYChat.h"       // 字体
+#import "KYUIUtility.h"
+
+#import <Masonry.h>
+#import <MobClick.h>
+#import <ReactiveCocoa.h>
+#import <SVProgressHUD.h>
+#import <CocoaLumberjack.h>
+#import <BlocksKit.h>
+#import <BlocksKit+UIKit.h>
+
+#import "KYNavigationController.h"
+
+#import "KYUserHelper.h"
+#import "KYFriendHelper.h"
+
+#import "KYActionSheet.h"
+#import "UIView+Frame.h"
+#import "UIButton+KYChat.h"
+#import "UITableView+KYChat.h"
+#import "UINavigationController+StackManager.h"
+#import "UINavigationController+JZExtension.h"
+#import "NSFileManager+KYChat.h"
+#import "UIImagePickerController+Fixed.h"
+#import "UIBarButtonItem+Action.h"
+#import "UINavigationItem+Fixed.h"
+ */
+
+#import "UIColor+KYChat.h"      // 颜色
+#import "UIFont+KYChat.h"       // 字体
+#import "KYNavigationController.h"
+#import "UINavigationController+StackManager.h"
+#import "UIView+Frame.h"
+#import "UIBarButtonItem+Action.h"
+
+#endif /* PrefixHeader_pch */
