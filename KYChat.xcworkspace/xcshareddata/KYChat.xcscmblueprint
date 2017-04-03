@@ -1,17 +1,17 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2C78CAEC74465496B3311CAD8DC60E33098AB42B",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "598FF1955662DE88320DD19BC29741A5C7657416",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "8881121B1C2D291DE7AFF8F765A9CB9F900CC50D" : 9223372036854775807,
-    "2C78CAEC74465496B3311CAD8DC60E33098AB42B" : 9223372036854775807,
+    "598FF1955662DE88320DD19BC29741A5C7657416" : 9223372036854775807,
     "5FEC8DB463D12F28933524688C233A05792317DA" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "FAD07CD7-D41C-4EB0-A834-A86211166DF8",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "8881121B1C2D291DE7AFF8F765A9CB9F900CC50D" : "KYCHat\/KYChat\/",
-    "2C78CAEC74465496B3311CAD8DC60E33098AB42B" : "KYChat\/",
+    "598FF1955662DE88320DD19BC29741A5C7657416" : "KYChat\/",
     "5FEC8DB463D12F28933524688C233A05792317DA" : "KYChat\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "KYChat",
@@ -21,7 +21,7 @@
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kaia7\/KYChat.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2C78CAEC74465496B3311CAD8DC60E33098AB42B"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "598FF1955662DE88320DD19BC29741A5C7657416"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kaia7\/KYChat.git",

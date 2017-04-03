@@ -35,6 +35,16 @@
 		55A8BB1B1E91720B0064E7F5 /* YAAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A8BB031E91720B0064E7F5 /* YAAPIClient.m */; };
 		55A8BB1C1E91720B0064E7F5 /* CheckAppStroeDataEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A8BB061E91720B0064E7F5 /* CheckAppStroeDataEngine.m */; };
 		55A8BB1D1E91720B0064E7F5 /* TLNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A8BB0A1E91720B0064E7F5 /* TLNetworking.m */; };
+		8B08AB7E1E91FFCF008052E5 /* TLAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B08AB7D1E91FFCF008052E5 /* TLAccountViewController.m */; };
+		8B08AB811E920007008052E5 /* TLRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B08AB801E920007008052E5 /* TLRegisterViewController.m */; };
+		8B08AB8E1E921DA8008052E5 /* TLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B08AB8D1E921DA8008052E5 /* TLUser.m */; };
+		8B08AB951E921DE1008052E5 /* TLBaseDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B08AB901E921DE1008052E5 /* TLBaseDataModel.m */; };
+		8B08AB961E921DE1008052E5 /* TLBaseProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B08AB921E921DE1008052E5 /* TLBaseProxy.m */; };
+		8B08ABA01E921E27008052E5 /* TLUserDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B08AB991E921E27008052E5 /* TLUserDetail.m */; };
+		8B08ABA11E921E27008052E5 /* TLUserSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B08AB9B1E921E27008052E5 /* TLUserSetting.m */; };
+		8B08ABA21E921E27008052E5 /* TLUserChatSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B08AB9D1E921E27008052E5 /* TLUserChatSetting.m */; };
+		8B08ABA31E921E27008052E5 /* TLUserGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B08AB9F1E921E27008052E5 /* TLUserGroup.m */; };
+		8B08ABAB1E9221B7008052E5 /* KYUserHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B08ABAA1E9221B7008052E5 /* KYUserHelper.m */; };
 		8B4865201E91CEE000194A85 /* FaceEmoji.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B48650E1E91CEE000194A85 /* FaceEmoji.json */; };
 		8B4865211E91CEE000194A85 /* SystemEmoji.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B48650F1E91CEE000194A85 /* SystemEmoji.json */; };
 		8B4865221E91CEE000194A85 /* Chat.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B4865111E91CEE000194A85 /* Chat.xcassets */; };
@@ -156,6 +166,26 @@
 		55A8BB091E91720B0064E7F5 /* TLNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLNetworking.h; sourceTree = "<group>"; };
 		55A8BB0A1E91720B0064E7F5 /* TLNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLNetworking.m; sourceTree = "<group>"; };
 		8561F7B72D44ED9635C37681 /* Pods-KYChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KYChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-KYChat/Pods-KYChat.release.xcconfig"; sourceTree = "<group>"; };
+		8B08AB7C1E91FFCF008052E5 /* TLAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLAccountViewController.h; sourceTree = "<group>"; };
+		8B08AB7D1E91FFCF008052E5 /* TLAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLAccountViewController.m; sourceTree = "<group>"; };
+		8B08AB7F1E920007008052E5 /* TLRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLRegisterViewController.h; sourceTree = "<group>"; };
+		8B08AB801E920007008052E5 /* TLRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLRegisterViewController.m; sourceTree = "<group>"; };
+		8B08AB8C1E921DA8008052E5 /* TLUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLUser.h; sourceTree = "<group>"; };
+		8B08AB8D1E921DA8008052E5 /* TLUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLUser.m; sourceTree = "<group>"; };
+		8B08AB8F1E921DE1008052E5 /* TLBaseDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLBaseDataModel.h; sourceTree = "<group>"; };
+		8B08AB901E921DE1008052E5 /* TLBaseDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLBaseDataModel.m; sourceTree = "<group>"; };
+		8B08AB911E921DE1008052E5 /* TLBaseProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLBaseProxy.h; sourceTree = "<group>"; };
+		8B08AB921E921DE1008052E5 /* TLBaseProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLBaseProxy.m; sourceTree = "<group>"; };
+		8B08AB981E921E27008052E5 /* TLUserDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLUserDetail.h; sourceTree = "<group>"; };
+		8B08AB991E921E27008052E5 /* TLUserDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLUserDetail.m; sourceTree = "<group>"; };
+		8B08AB9A1E921E27008052E5 /* TLUserSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLUserSetting.h; sourceTree = "<group>"; };
+		8B08AB9B1E921E27008052E5 /* TLUserSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLUserSetting.m; sourceTree = "<group>"; };
+		8B08AB9C1E921E27008052E5 /* TLUserChatSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLUserChatSetting.h; sourceTree = "<group>"; };
+		8B08AB9D1E921E27008052E5 /* TLUserChatSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLUserChatSetting.m; sourceTree = "<group>"; };
+		8B08AB9E1E921E27008052E5 /* TLUserGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLUserGroup.h; sourceTree = "<group>"; };
+		8B08AB9F1E921E27008052E5 /* TLUserGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLUserGroup.m; sourceTree = "<group>"; };
+		8B08ABA91E9221B7008052E5 /* KYUserHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYUserHelper.h; sourceTree = "<group>"; };
+		8B08ABAA1E9221B7008052E5 /* KYUserHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYUserHelper.m; sourceTree = "<group>"; };
 		8B48650E1E91CEE000194A85 /* FaceEmoji.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FaceEmoji.json; sourceTree = "<group>"; };
 		8B48650F1E91CEE000194A85 /* SystemEmoji.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SystemEmoji.json; sourceTree = "<group>"; };
 		8B4865111E91CEE000194A85 /* Chat.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Chat.xcassets; sourceTree = "<group>"; };
@@ -296,6 +326,8 @@
 		55950B531E8426A100ECF74F /* KYChat */ = {
 			isa = PBXGroup;
 			children = (
+				8B08ABA71E922199008052E5 /* Business */,
+				8B08AB821E921B91008052E5 /* Proxys */,
 				8B48650C1E91CEE000194A85 /* Resources */,
 				8BFC42E81E8E55A30087423D /* EXtensions */,
 				8BFC42B61E8E45E00087423D /* SRC */,
@@ -468,6 +500,68 @@
 			path = TLNetworking;
 			sourceTree = "<group>";
 		};
+		8B08AB821E921B91008052E5 /* Proxys */ = {
+			isa = PBXGroup;
+			children = (
+				8B08AB851E921BDE008052E5 /* Base */,
+				8B08AB831E921B91008052E5 /* Friends */,
+			);
+			path = Proxys;
+			sourceTree = "<group>";
+		};
+		8B08AB831E921B91008052E5 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				8B08AB841E921B91008052E5 /* Users */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		8B08AB841E921B91008052E5 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				8B08AB8C1E921DA8008052E5 /* TLUser.h */,
+				8B08AB8D1E921DA8008052E5 /* TLUser.m */,
+				8B08AB981E921E27008052E5 /* TLUserDetail.h */,
+				8B08AB991E921E27008052E5 /* TLUserDetail.m */,
+				8B08AB9A1E921E27008052E5 /* TLUserSetting.h */,
+				8B08AB9B1E921E27008052E5 /* TLUserSetting.m */,
+				8B08AB9C1E921E27008052E5 /* TLUserChatSetting.h */,
+				8B08AB9D1E921E27008052E5 /* TLUserChatSetting.m */,
+				8B08AB9E1E921E27008052E5 /* TLUserGroup.h */,
+				8B08AB9F1E921E27008052E5 /* TLUserGroup.m */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		8B08AB851E921BDE008052E5 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8B08AB8F1E921DE1008052E5 /* TLBaseDataModel.h */,
+				8B08AB901E921DE1008052E5 /* TLBaseDataModel.m */,
+				8B08AB911E921DE1008052E5 /* TLBaseProxy.h */,
+				8B08AB921E921DE1008052E5 /* TLBaseProxy.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		8B08ABA71E922199008052E5 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				8B08ABA81E922199008052E5 /* User */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		8B08ABA81E922199008052E5 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				8B08ABA91E9221B7008052E5 /* KYUserHelper.h */,
+				8B08ABAA1E9221B7008052E5 /* KYUserHelper.m */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
 		8B48650C1E91CEE000194A85 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -548,6 +642,8 @@
 		8B48652E1E91D10D00194A85 /* Account */ = {
 			isa = PBXGroup;
 			children = (
+				8B08AB7C1E91FFCF008052E5 /* TLAccountViewController.h */,
+				8B08AB7D1E91FFCF008052E5 /* TLAccountViewController.m */,
 			);
 			name = Account;
 			sourceTree = "<group>";
@@ -555,6 +651,8 @@
 		8B48652F1E91D11B00194A85 /* Reginster */ = {
 			isa = PBXGroup;
 			children = (
+				8B08AB7F1E920007008052E5 /* TLRegisterViewController.h */,
+				8B08AB801E920007008052E5 /* TLRegisterViewController.m */,
 			);
 			name = Reginster;
 			sourceTree = "<group>";
@@ -1174,13 +1272,17 @@
 			files = (
 				55A8BB131E91720B0064E7F5 /* NSObject+YANetWorkingAutoCancel.m in Sources */,
 				8BFC43211E8E562A0087423D /* UIImagePickerController+Fixed.m in Sources */,
+				8B08AB7E1E91FFCF008052E5 /* TLAccountViewController.m in Sources */,
 				8BFC42C61E8E49B20087423D /* KYConversationViewController.m in Sources */,
 				55A8BB1C1E91720B0064E7F5 /* CheckAppStroeDataEngine.m in Sources */,
 				55A8BB181E91720B0064E7F5 /* YAServer.m in Sources */,
 				8BFC43271E8E562A0087423D /* UIView+Extensions.m in Sources */,
 				8BFC431A1E8E562A0087423D /* NSFileManager+Paths.m in Sources */,
+				8B08ABA31E921E27008052E5 /* TLUserGroup.m in Sources */,
 				55A8BB0B1E91720B0064E7F5 /* customSecurityPolocy.m in Sources */,
 				55A8BB0E1E91720B0064E7F5 /* YAAPIURLRequestGenerator.m in Sources */,
+				8B08AB951E921DE1008052E5 /* TLBaseDataModel.m in Sources */,
+				8B08ABA21E921E27008052E5 /* TLUserChatSetting.m in Sources */,
 				55A8BB0C1E91720B0064E7F5 /* YAAPIBaseRequestDataModel.m in Sources */,
 				55A8BB191E91720B0064E7F5 /* YABaseServers.m in Sources */,
 				8BFC431D1E8E562A0087423D /* UIBarButtonItem+Action.m in Sources */,
@@ -1203,16 +1305,22 @@
 				8BFC42B41E8E418A0087423D /* UIColor+KYChat.m in Sources */,
 				55A8BB1D1E91720B0064E7F5 /* TLNetworking.m in Sources */,
 				8BFC43231E8E562A0087423D /* UINavigationController+StackManager.m in Sources */,
+				8B08AB961E921DE1008052E5 /* TLBaseProxy.m in Sources */,
 				8BFC43181E8E562A0087423D /* NSDate+Extension.m in Sources */,
+				8B08ABA01E921E27008052E5 /* TLUserDetail.m in Sources */,
 				55950B5C1E8426A100ECF74F /* ViewController.m in Sources */,
 				8BFC43251E8E562A0087423D /* UIScrollView+Pages.m in Sources */,
 				55950B591E8426A100ECF74F /* AppDelegate.m in Sources */,
+				8B08ABA11E921E27008052E5 /* TLUserSetting.m in Sources */,
 				8BFC43281E8E562A0087423D /* UIView+Frame.m in Sources */,
 				8BFC431C1E8E562A0087423D /* NSString+UrlEncode.m in Sources */,
 				8B4865321E91D13000194A85 /* TLLoginViewController.m in Sources */,
 				8BFC431B1E8E562A0087423D /* NSString+PinYin.m in Sources */,
 				8BFC43191E8E562A0087423D /* NSDate+Utilities.m in Sources */,
 				55A8BB111E91720B0064E7F5 /* YASignatureGenerator.m in Sources */,
+				8B08AB8E1E921DA8008052E5 /* TLUser.m in Sources */,
+				8B08AB811E920007008052E5 /* TLRegisterViewController.m in Sources */,
+				8B08ABAB1E9221B7008052E5 /* KYUserHelper.m in Sources */,
 				8BFC42DA1E8E4E440087423D /* KYRootViewController.m in Sources */,
 				8BFC43261E8E562A0087423D /* UITableView+TLChat.m in Sources */,
 				55950B561E8426A100ECF74F /* main.m in Sources */,
@@ -1319,7 +1427,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1361,7 +1469,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

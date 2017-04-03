@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>BlocksKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>CocoaLumberjack.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -64,6 +69,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ReactiveCocoa.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -83,6 +93,11 @@
 			<true/>
 		</dict>
 		<key>0880E63659C3029F674AFF16447B8E01</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0AC55E754182E1FCF070AC7F74379523</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -107,12 +122,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>399DCA70BF1340F19FD3AA319FFA9BD2</key>
+		<key>4B992373C19AFDD3B28E1327628C6356</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>61B92DA67A8CBE45B4CAC732B589D079</key>
+		<key>53218D9A0B4E584E508FAE3CE2448F84</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5BE64F9A80E4D503A8ADD2A85F0AA243</key>
 		<dict>
 			<key>primary</key>
 			<true/>

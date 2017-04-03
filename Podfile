@@ -12,6 +12,10 @@ pod 'MJRefresh'
 pod 'CocoaLumberjack'
 pod 'MWPhotoBrowser'
 pod 'SVProgressHUD'
+pod 'ReactiveCocoa', '~> 2.5' 
+pod 'BlocksKit', '~> 2.2.5'
+pod 'UMengAnalytics', '~> 3.6.6'
+
 
 
 end

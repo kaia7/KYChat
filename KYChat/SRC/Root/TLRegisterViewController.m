@@ -1,12 +1,12 @@
 //
-//  TLLoginViewController.m
+//  TLRegisterViewController.m
 //  TLChat
 //
 //  Created by 李伯坤 on 16/4/3.
 //  Copyright © 2016年 李伯坤. All rights reserved.
 //
 
-#import "TLLoginViewController.h"
+#import "TLRegisterViewController.h"
 //#import "TLRootProxy.h"
 
 #define     HEIGHT_ITEM     45.0f
@@ -14,7 +14,7 @@
 #define     WIDTH_TITLE     90.0f
 #define     EDGE_DETAIL     15.0f
 
-@interface TLLoginViewController ()
+@interface TLRegisterViewController ()
 
 @property (nonatomic, strong) UIScrollView *scrollView;
 
@@ -31,13 +31,15 @@
 @property (nonatomic, strong) UILabel *passwordTitleLabel;
 @property (nonatomic, strong) UITextField *passwordTextField;
 
-@property (nonatomic, strong) UIButton *loginButton;
+@property (nonatomic, strong) UILabel *repeatPasswordTitleLabel;
+@property (nonatomic, strong) UITextField *repeatPasswordTextField;
+
+@property (nonatomic, strong) UIButton *registerButton;
 
 @end
 
-@implementation TLLoginViewController
+@implementation TLRegisterViewController
 
-#pragma mark - # LifeCycle
 - (void)loadView {
     [super loadView];
     self.stausBarStyle = UIStatusBarStyleDefault;
@@ -51,7 +53,9 @@
     [self.scrollView addSubview:self.phoneNumberTextField];
     [self.scrollView addSubview:self.passwordTitleLabel];
     [self.scrollView addSubview:self.passwordTextField];
-    [self.scrollView addSubview:self.loginButton];
+    [self.scrollView addSubview:self.repeatPasswordTitleLabel];
+    [self.scrollView addSubview:self.repeatPasswordTextField];
+    [self.scrollView addSubview:self.registerButton];
     
     [self p_addMasonry];
     
@@ -68,6 +72,7 @@
     [SVProgressHUD dismiss];
     [self.phoneNumberTextField resignFirstResponder];
     [self.passwordTextField resignFirstResponder];
+    [self.repeatPasswordTextField resignFirstResponder];
 }
 
 #pragma mark - # Event Response
@@ -81,28 +86,28 @@
     [SVProgressHUD dismiss];
     [self.phoneNumberTextField resignFirstResponder];
     [self.passwordTextField resignFirstResponder];
+    [self.repeatPasswordTextField resignFirstResponder];
 }
 
-- (void)loginButtonClicked
+- (void)registerButtonClicked
 {
     NSString *phoneNumber = self.phoneNumberTextField.text;
-    if (phoneNumber.length != 11 && ![phoneNumber hasPrefix:@"1"]) {
-        [SVProgressHUD showErrorWithStatus:@"请输入正确的手机号"];
-        return;
-    }
     NSString *password = self.passwordTextField.text;
-    
+/*
     [SVProgressHUD show];
-//    TLRootProxy *proxy = [[TLRootProxy alloc] init];
-    KYWeakSelf(self);
-//    [proxy userLoginWithPhoneNumber:phoneNumber password:password success:^(id datas) {
-//        [SVProgressHUD dismiss];
-//        if (weakself.loginSuccess) {
-//            weakself.loginSuccess();
-//        }
-//    } failure:^(NSString *errMsg) {
-//        [SVProgressHUD showErrorWithStatus:errMsg];
-//    }];
+    TLRootProxy *proxy = [[TLRootProxy alloc] init];
+    TLWeakSelf(self);
+    [proxy userRegisterWithPhoneNumber:phoneNumber password:password success:^(id datas) {
+        [SVProgressHUD dismiss];
+        if (weakself.registerSuccess) {
+            weakself.registerSuccess();
+        }
+    } failure:^(NSString *errMsg) {
+        [SVProgressHUD showErrorWithStatus:errMsg];
+    }];
+ 
+ */
+
 }
 
 #pragma mark - # Private Methods
@@ -204,10 +209,32 @@
         make.height.mas_equalTo(BORDER_WIDTH_1PX);
     }];
     
-    [self.loginButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.and.right.mas_equalTo(line3);
+    [self.repeatPasswordTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(line3);
+        make.top.mas_equalTo(line3.mas_bottom);
         make.height.mas_equalTo(HEIGHT_ITEM);
-        make.top.mas_equalTo(line3.mas_bottom).mas_offset(HEIGHT_ITEM);
+        make.width.mas_equalTo(self.districtNumberLabel);
+    }];
+    [self.repeatPasswordTextField mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(self.originLabel);
+        make.centerY.mas_equalTo(self.repeatPasswordTitleLabel);
+        make.height.mas_equalTo(HEIGHT_ITEM);
+        make.right.mas_equalTo(self.view).mas_offset(-EDGE_LINE);
+    }];
+    
+    UIView *line4 = crateLine();
+    [self.scrollView addSubview:line4];
+    [line4 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(self.repeatPasswordTitleLabel.mas_bottom);
+        make.left.mas_equalTo(EDGE_LINE);
+        make.width.mas_equalTo(self.scrollView).mas_offset(-EDGE_LINE * 2);
+        make.height.mas_equalTo(BORDER_WIDTH_1PX);
+    }];
+    
+    [self.registerButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.and.right.mas_equalTo(line4);
+        make.height.mas_equalTo(HEIGHT_ITEM);
+        make.top.mas_equalTo(line4.mas_bottom).mas_offset(HEIGHT_ITEM);
     }];
 }
 
@@ -238,7 +265,7 @@
     if (!_titleLabel) {
         _titleLabel = [[UILabel alloc] init];
         [_titleLabel setFont:[UIFont systemFontOfSize:28.0]];
-        [_titleLabel setText:@"使用手机号登录"];
+        [_titleLabel setText:@"通过手机号注册"];
     }
     return _titleLabel;
 }
@@ -276,7 +303,7 @@
         _phoneNumberTextField = [[UITextField alloc] init];
         [_phoneNumberTextField setPlaceholder:@"请填写手机号码"];
         [_phoneNumberTextField setClearButtonMode:UITextFieldViewModeWhileEditing];
-        [_phoneNumberTextField setKeyboardType:UIKeyboardTypeDefault];
+        [_phoneNumberTextField setKeyboardType:UIKeyboardTypePhonePad];
     }
     return _phoneNumberTextField;
 }
@@ -300,14 +327,33 @@
     return _passwordTextField;
 }
 
-- (UIButton *)loginButton
+- (UILabel *)repeatPasswordTitleLabel
 {
-    if (!_loginButton) {
-        _loginButton = [UIButton defaultButton];
-        [_loginButton setTitle:@"登录" forState:UIControlStateNormal];
-        [_loginButton addTarget:self action:@selector(loginButtonClicked) forControlEvents:UIControlEventTouchUpInside];
+    if (!_repeatPasswordTitleLabel) {
+        _repeatPasswordTitleLabel = [[UILabel alloc] init];
+        [_repeatPasswordTitleLabel setText:@"确认密码"];
     }
-    return _loginButton;
+    return _repeatPasswordTitleLabel;
+}
+- (UITextField *)repeatPasswordTextField
+{
+    if (!_repeatPasswordTextField) {
+        _repeatPasswordTextField = [[UITextField alloc] init];
+        [_repeatPasswordTextField setPlaceholder:@"请再填写一次密码"];
+        [_repeatPasswordTextField setClearButtonMode:UITextFieldViewModeWhileEditing];
+        [_repeatPasswordTextField setSecureTextEntry:YES];
+    }
+    return _repeatPasswordTextField;
+}
+
+- (UIButton *)registerButton
+{
+    if (!_registerButton) {
+        _registerButton = [UIButton defaultButton];
+        [_registerButton setTitle:@"注册" forState:UIControlStateNormal];
+        [_registerButton addTarget:self action:@selector(registerButtonClicked) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _registerButton;
 }
 
 @end
