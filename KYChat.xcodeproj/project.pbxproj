@@ -35,6 +35,19 @@
 		55A8BB1B1E91720B0064E7F5 /* YAAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A8BB031E91720B0064E7F5 /* YAAPIClient.m */; };
 		55A8BB1C1E91720B0064E7F5 /* CheckAppStroeDataEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A8BB061E91720B0064E7F5 /* CheckAppStroeDataEngine.m */; };
 		55A8BB1D1E91720B0064E7F5 /* TLNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A8BB0A1E91720B0064E7F5 /* TLNetworking.m */; };
+		8B4865201E91CEE000194A85 /* FaceEmoji.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B48650E1E91CEE000194A85 /* FaceEmoji.json */; };
+		8B4865211E91CEE000194A85 /* SystemEmoji.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B48650F1E91CEE000194A85 /* SystemEmoji.json */; };
+		8B4865221E91CEE000194A85 /* Chat.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B4865111E91CEE000194A85 /* Chat.xcassets */; };
+		8B4865231E91CEE000194A85 /* Common.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B4865121E91CEE000194A85 /* Common.xcassets */; };
+		8B4865241E91CEE000194A85 /* Conversation.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B4865131E91CEE000194A85 /* Conversation.xcassets */; };
+		8B4865251E91CEE000194A85 /* Discover.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B4865141E91CEE000194A85 /* Discover.xcassets */; };
+		8B4865261E91CEE000194A85 /* Friends.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B4865151E91CEE000194A85 /* Friends.xcassets */; };
+		8B4865271E91CEE000194A85 /* Launch.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B4865161E91CEE000194A85 /* Launch.xcassets */; };
+		8B4865281E91CEE000194A85 /* Mine.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B4865171E91CEE000194A85 /* Mine.xcassets */; };
+		8B4865291E91CEE000194A85 /* FriendGroupList.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B48651A1E91CEE000194A85 /* FriendGroupList.json */; };
+		8B48652A1E91CEE000194A85 /* FriendList.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B48651B1E91CEE000194A85 /* FriendList.json */; };
+		8B48652B1E91CEE000194A85 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 8B48651D1E91CEE000194A85 /* main.js */; };
+		8B48652C1E91CEE000194A85 /* Moments.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B48651F1E91CEE000194A85 /* Moments.json */; };
 		8BFC42AD1E8E3ED30087423D /* KYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFC42AC1E8E3ED30087423D /* KYViewController.m */; };
 		8BFC42B41E8E418A0087423D /* UIColor+KYChat.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFC42B31E8E418A0087423D /* UIColor+KYChat.m */; };
 		8BFC42C31E8E473A0087423D /* KYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFC42C21E8E473A0087423D /* KYTableViewController.m */; };
@@ -142,6 +155,19 @@
 		55A8BB091E91720B0064E7F5 /* TLNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLNetworking.h; sourceTree = "<group>"; };
 		55A8BB0A1E91720B0064E7F5 /* TLNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLNetworking.m; sourceTree = "<group>"; };
 		8561F7B72D44ED9635C37681 /* Pods-KYChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KYChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-KYChat/Pods-KYChat.release.xcconfig"; sourceTree = "<group>"; };
+		8B48650E1E91CEE000194A85 /* FaceEmoji.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FaceEmoji.json; sourceTree = "<group>"; };
+		8B48650F1E91CEE000194A85 /* SystemEmoji.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SystemEmoji.json; sourceTree = "<group>"; };
+		8B4865111E91CEE000194A85 /* Chat.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Chat.xcassets; sourceTree = "<group>"; };
+		8B4865121E91CEE000194A85 /* Common.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Common.xcassets; sourceTree = "<group>"; };
+		8B4865131E91CEE000194A85 /* Conversation.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Conversation.xcassets; sourceTree = "<group>"; };
+		8B4865141E91CEE000194A85 /* Discover.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Discover.xcassets; sourceTree = "<group>"; };
+		8B4865151E91CEE000194A85 /* Friends.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Friends.xcassets; sourceTree = "<group>"; };
+		8B4865161E91CEE000194A85 /* Launch.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Launch.xcassets; sourceTree = "<group>"; };
+		8B4865171E91CEE000194A85 /* Mine.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Mine.xcassets; sourceTree = "<group>"; };
+		8B48651A1E91CEE000194A85 /* FriendGroupList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FriendGroupList.json; sourceTree = "<group>"; };
+		8B48651B1E91CEE000194A85 /* FriendList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FriendList.json; sourceTree = "<group>"; };
+		8B48651D1E91CEE000194A85 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		8B48651F1E91CEE000194A85 /* Moments.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Moments.json; sourceTree = "<group>"; };
 		8BFC42AB1E8E3ED30087423D /* KYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYViewController.h; sourceTree = "<group>"; };
 		8BFC42AC1E8E3ED30087423D /* KYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYViewController.m; sourceTree = "<group>"; };
 		8BFC42AF1E8E3FEF0087423D /* KYMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYMacros.h; sourceTree = "<group>"; };
@@ -267,6 +293,7 @@
 		55950B531E8426A100ECF74F /* KYChat */ = {
 			isa = PBXGroup;
 			children = (
+				8B48650C1E91CEE000194A85 /* Resources */,
 				8BFC42E81E8E55A30087423D /* EXtensions */,
 				8BFC42B61E8E45E00087423D /* SRC */,
 				8BFC42B01E8E411B0087423D /* Utilities */,
@@ -436,6 +463,74 @@
 				55A8BB0A1E91720B0064E7F5 /* TLNetworking.m */,
 			);
 			path = TLNetworking;
+			sourceTree = "<group>";
+		};
+		8B48650C1E91CEE000194A85 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8B48650D1E91CEE000194A85 /* DefaultEmoji */,
+				8B4865101E91CEE000194A85 /* Images */,
+				8B4865181E91CEE000194A85 /* TestData */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8B48650D1E91CEE000194A85 /* DefaultEmoji */ = {
+			isa = PBXGroup;
+			children = (
+				8B48650E1E91CEE000194A85 /* FaceEmoji.json */,
+				8B48650F1E91CEE000194A85 /* SystemEmoji.json */,
+			);
+			path = DefaultEmoji;
+			sourceTree = "<group>";
+		};
+		8B4865101E91CEE000194A85 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8B4865111E91CEE000194A85 /* Chat.xcassets */,
+				8B4865121E91CEE000194A85 /* Common.xcassets */,
+				8B4865131E91CEE000194A85 /* Conversation.xcassets */,
+				8B4865141E91CEE000194A85 /* Discover.xcassets */,
+				8B4865151E91CEE000194A85 /* Friends.xcassets */,
+				8B4865161E91CEE000194A85 /* Launch.xcassets */,
+				8B4865171E91CEE000194A85 /* Mine.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		8B4865181E91CEE000194A85 /* TestData */ = {
+			isa = PBXGroup;
+			children = (
+				8B4865191E91CEE000194A85 /* Friends */,
+				8B48651C1E91CEE000194A85 /* JSPatch */,
+				8B48651E1E91CEE000194A85 /* Moments */,
+			);
+			path = TestData;
+			sourceTree = "<group>";
+		};
+		8B4865191E91CEE000194A85 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				8B48651A1E91CEE000194A85 /* FriendGroupList.json */,
+				8B48651B1E91CEE000194A85 /* FriendList.json */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		8B48651C1E91CEE000194A85 /* JSPatch */ = {
+			isa = PBXGroup;
+			children = (
+				8B48651D1E91CEE000194A85 /* main.js */,
+			);
+			path = JSPatch;
+			sourceTree = "<group>";
+		};
+		8B48651E1E91CEE000194A85 /* Moments */ = {
+			isa = PBXGroup;
+			children = (
+				8B48651F1E91CEE000194A85 /* Moments.json */,
+			);
+			path = Moments;
 			sourceTree = "<group>";
 		};
 		8BFC429F1E8E3D320087423D /* Common */ = {
@@ -961,8 +1056,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				55950B641E8426A100ECF74F /* LaunchScreen.storyboard in Resources */,
+				8B48652A1E91CEE000194A85 /* FriendList.json in Resources */,
+				8B4865221E91CEE000194A85 /* Chat.xcassets in Resources */,
+				8B4865281E91CEE000194A85 /* Mine.xcassets in Resources */,
+				8B4865211E91CEE000194A85 /* SystemEmoji.json in Resources */,
+				8B4865201E91CEE000194A85 /* FaceEmoji.json in Resources */,
+				8B4865241E91CEE000194A85 /* Conversation.xcassets in Resources */,
+				8B48652C1E91CEE000194A85 /* Moments.json in Resources */,
+				8B4865271E91CEE000194A85 /* Launch.xcassets in Resources */,
+				8B4865291E91CEE000194A85 /* FriendGroupList.json in Resources */,
+				8B48652B1E91CEE000194A85 /* main.js in Resources */,
 				55950B611E8426A100ECF74F /* Assets.xcassets in Resources */,
 				55950B5F1E8426A100ECF74F /* Main.storyboard in Resources */,
+				8B4865231E91CEE000194A85 /* Common.xcassets in Resources */,
+				8B4865251E91CEE000194A85 /* Discover.xcassets in Resources */,
+				8B4865261E91CEE000194A85 /* Friends.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
