@@ -4,5 +4,14 @@ target :KYChat do
 
 pod 'AFNetworking','~> 3.0.4'
 pod 'BLKFlexibleHeightBar', '~> 1.0.2'
+pod 'Masonry'
+pod 'FMDB'
+pod 'SDWebImage'
+pod 'MJExtension'
+pod 'MJRefresh'
+pod 'CocoaLumberjack'
+pod 'MWPhotoBrowser'
+pod 'SVProgressHUD'
+
 
 end

@@ -83,7 +83,7 @@ static KYRootViewController *rootVC = nil;
     return _conversationVC;
 }
 
-- (KYFrieldsViewController *) friendsVC
+- (KYFrieldsViewController *) friendVC
 {
     if (_friendVC == nil) {
         _friendVC = [[KYFrieldsViewController alloc] init];
