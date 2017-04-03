@@ -12,6 +12,9 @@
 #import "TLLoginViewController.h"
 #import "TLBaseProxy.h"
 #import <BlocksKit.h>
+#import "NSDate+Utilities.h"
+#import "TLAccountViewController.h"
+
 
 
 @interface AppDelegate ()
@@ -62,8 +65,31 @@
     // 友盟统计
     [MobClick startWithAppkey:UMENG_APPKEY reportPolicy:BATCH channelId:APP_CHANNEL];
     
+    // 网络环境监测
+    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+/*
+    // JSPatch
+#ifdef DEBUG_JSPATCH
+    [JSPatch testScriptInBundle];
+#else
+    [JSPatch startWithAppKey:JSPATCH_APPKEY];
+    [JSPatch sync];
+#endif
+ */
+    // Mob SMS
+    //    [SMSSDK registerApp:MOB_SMS_APPKEY withSecret:MOB_SMS_SECRET];
     
+    //提示框
+    [SVProgressHUD setDefaultAnimationType:SVProgressHUDAnimationTypeNative];
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
     
+    // 日志
+    [DDLog addLogger:[DDTTYLogger sharedInstance]];
+    [DDLog addLogger:[DDASLLogger sharedInstance]];
+    DDFileLogger *fileLogger = [[DDFileLogger alloc] init];
+    fileLogger.rollingFrequency = 60 * 60 * 24;
+    fileLogger.logFileManager.maximumNumberOfLogFiles = 7;
+    [DDLog addLogger:fileLogger];
 }
 
 - (void)k_initUI {
@@ -76,11 +102,24 @@
     if (![KYUserHelper shareHelper].isLogin) {
         rootVC = [KYRootViewController sharedRootViewController];
         [self p_initUserData];          // 初始化用户信息
+    } else {
+        
+        rootVC = [[TLAccountViewController alloc] init];
+        KYWeakSelf(self);
+        KYWeakSelf(rootVC);
+        [(TLAccountViewController *)rootVC setLoginSuccess:^{
+            [weakself p_initUserData];          // 初始化用户信息
+            [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+            [weakrootVC.view removeFromSuperview];
+            [weakself.window setRootViewController:[KYRootViewController sharedRootViewController]];
+            [weakself.window addSubview:[KYRootViewController sharedRootViewController].view];
+
+        }];
+        
+        
     }
     
-    rootVC = [KYRootViewController sharedRootViewController];
-    
-    
+
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window setRootViewController:rootVC];
     [self.window addSubview:rootVC.view];
@@ -104,6 +143,8 @@
     NSDate *date = [NSDate dateWithTimeIntervalSince1970:lastRunDate.doubleValue];
     NSNumber *sponsorStatus = [[NSUserDefaults standardUserDefaults] objectForKey:@"sponsorStatus"];
     NSLog(@"今天第%ld次进入", sponsorStatus.integerValue);
+    
+    
     
 }
 

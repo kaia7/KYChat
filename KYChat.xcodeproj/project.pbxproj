@@ -45,6 +45,8 @@
 		8B08ABA21E921E27008052E5 /* TLUserChatSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B08AB9D1E921E27008052E5 /* TLUserChatSetting.m */; };
 		8B08ABA31E921E27008052E5 /* TLUserGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B08AB9F1E921E27008052E5 /* TLUserGroup.m */; };
 		8B08ABAB1E9221B7008052E5 /* KYUserHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B08ABAA1E9221B7008052E5 /* KYUserHelper.m */; };
+		8B08ABAF1E923E03008052E5 /* TLRootProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B08ABAE1E923E03008052E5 /* TLRootProxy.m */; };
+		8B08ABB21E923E60008052E5 /* TLHost.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B08ABB11E923E60008052E5 /* TLHost.m */; };
 		8B4865201E91CEE000194A85 /* FaceEmoji.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B48650E1E91CEE000194A85 /* FaceEmoji.json */; };
 		8B4865211E91CEE000194A85 /* SystemEmoji.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B48650F1E91CEE000194A85 /* SystemEmoji.json */; };
 		8B4865221E91CEE000194A85 /* Chat.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B4865111E91CEE000194A85 /* Chat.xcassets */; };
@@ -186,6 +188,10 @@
 		8B08AB9F1E921E27008052E5 /* TLUserGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLUserGroup.m; sourceTree = "<group>"; };
 		8B08ABA91E9221B7008052E5 /* KYUserHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYUserHelper.h; sourceTree = "<group>"; };
 		8B08ABAA1E9221B7008052E5 /* KYUserHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYUserHelper.m; sourceTree = "<group>"; };
+		8B08ABAD1E923E03008052E5 /* TLRootProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLRootProxy.h; sourceTree = "<group>"; };
+		8B08ABAE1E923E03008052E5 /* TLRootProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLRootProxy.m; sourceTree = "<group>"; };
+		8B08ABB01E923E60008052E5 /* TLHost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLHost.h; sourceTree = "<group>"; };
+		8B08ABB11E923E60008052E5 /* TLHost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLHost.m; sourceTree = "<group>"; };
 		8B48650E1E91CEE000194A85 /* FaceEmoji.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FaceEmoji.json; sourceTree = "<group>"; };
 		8B48650F1E91CEE000194A85 /* SystemEmoji.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SystemEmoji.json; sourceTree = "<group>"; };
 		8B4865111E91CEE000194A85 /* Chat.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Chat.xcassets; sourceTree = "<group>"; };
@@ -503,6 +509,7 @@
 		8B08AB821E921B91008052E5 /* Proxys */ = {
 			isa = PBXGroup;
 			children = (
+				8B08ABAC1E923DC8008052E5 /* Root */,
 				8B08AB851E921BDE008052E5 /* Base */,
 				8B08AB831E921B91008052E5 /* Friends */,
 			);
@@ -560,6 +567,15 @@
 				8B08ABAA1E9221B7008052E5 /* KYUserHelper.m */,
 			);
 			path = User;
+			sourceTree = "<group>";
+		};
+		8B08ABAC1E923DC8008052E5 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				8B08ABAD1E923E03008052E5 /* TLRootProxy.h */,
+				8B08ABAE1E923E03008052E5 /* TLRootProxy.m */,
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 		8B48650C1E91CEE000194A85 /* Resources */ = {
@@ -765,6 +781,8 @@
 		8BFC42AE1E8E3FC20087423D /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				8B08ABB01E923E60008052E5 /* TLHost.h */,
+				8B08ABB11E923E60008052E5 /* TLHost.m */,
 				8BFC42AF1E8E3FEF0087423D /* KYMacros.h */,
 			);
 			path = Config;
@@ -1284,6 +1302,7 @@
 				8B08AB951E921DE1008052E5 /* TLBaseDataModel.m in Sources */,
 				8B08ABA21E921E27008052E5 /* TLUserChatSetting.m in Sources */,
 				55A8BB0C1E91720B0064E7F5 /* YAAPIBaseRequestDataModel.m in Sources */,
+				8B08ABAF1E923E03008052E5 /* TLRootProxy.m in Sources */,
 				55A8BB191E91720B0064E7F5 /* YABaseServers.m in Sources */,
 				8BFC431D1E8E562A0087423D /* UIBarButtonItem+Action.m in Sources */,
 				8BFC431E1E8E562A0087423D /* UIButton+TLChat.m in Sources */,
@@ -1308,6 +1327,7 @@
 				8B08AB961E921DE1008052E5 /* TLBaseProxy.m in Sources */,
 				8BFC43181E8E562A0087423D /* NSDate+Extension.m in Sources */,
 				8B08ABA01E921E27008052E5 /* TLUserDetail.m in Sources */,
+				8B08ABB21E923E60008052E5 /* TLHost.m in Sources */,
 				55950B5C1E8426A100ECF74F /* ViewController.m in Sources */,
 				8BFC43251E8E562A0087423D /* UIScrollView+Pages.m in Sources */,
 				55950B591E8426A100ECF74F /* AppDelegate.m in Sources */,
