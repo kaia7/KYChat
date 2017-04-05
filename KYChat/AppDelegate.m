@@ -15,7 +15,6 @@
 #import "NSDate+Utilities.h"
 #import "TLAccountViewController.h"
 
-#pragma mark - # define CESHI
 
 
 @interface AppDelegate ()
