@@ -70,9 +70,9 @@ DEPENDENCIES:
   - Masonry
   - MJExtension
   - MJRefresh
-  - MWPhotoBrowser (~> 2.1.1)
+  - MWPhotoBrowser
   - ReactiveCocoa (~> 2.5)
-  - SDWebImage (~> 3.8.2)
+  - SDWebImage
   - SVProgressHUD
   - UMengAnalytics (~> 3.6.6)
 
@@ -93,6 +93,6 @@ SPEC CHECKSUMS:
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
   UMengAnalytics: 4bf831415146b9c57cb10be65fbd43462ef8cf65
 
-PODFILE CHECKSUM: 5a41ab820f279271ac818e9729161892fa0e9b87
+PODFILE CHECKSUM: fc662f2260b55cdfa3f102e80b5e82c63023e56c
 
 COCOAPODS: 1.2.1.beta.1
