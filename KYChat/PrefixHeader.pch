@@ -60,6 +60,10 @@
 #import <AFNetworking.h>
 #import <CocoaLumberjack.h>
 #import "TLHost.h"              // 网络地址
+#import "KYUserHelper.h"
+#import "NSFileManager+TLChat.h"
+//what?
+static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
 
 
 

@@ -99,8 +99,8 @@
     
     UIViewController *rootVC;
 
-    
-    if (![KYUserHelper shareHelper].isLogin) {
+    /*
+    if ([KYUserHelper shareHelper].isLogin) {
         rootVC = [KYRootViewController sharedRootViewController];
         [self p_initUserData];          // 初始化用户信息
     } else {
@@ -119,8 +119,18 @@
         
         
     }
-    
-
+     */
+    KYWeakSelf(self);
+    KYWeakSelf(rootVC);
+    rootVC = [[TLLoginViewController alloc] init];
+    [(TLLoginViewController *)rootVC setLoginSuccess:^{
+        [weakself p_initUserData];          // 初始化用户信息
+        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+        [weakrootVC.view removeFromSuperview];
+        [weakself.window setRootViewController:[KYRootViewController sharedRootViewController]];
+        [weakself.window addSubview:[KYRootViewController sharedRootViewController].view];
+        
+    }];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window setRootViewController:rootVC];
     [self.window addSubview:rootVC.view];

@@ -24,7 +24,7 @@
             self.child = (id<YABaseServiceProtocol>)self;
 #ifdef YA_BUILD_FOR_RELEASE
             //优先宏定义正式环境
-            self.environmentType = EnvironmentTypeRelease;
+            self.environmentType = EnvironmentTypeDevelop;
 #else
             //手动切换环境后会把设置保存
             NSNumber *type = [[NSUserDefaults standardUserDefaults] objectForKey:@"environmentType"];

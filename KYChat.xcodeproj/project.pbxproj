@@ -61,6 +61,11 @@
 		8B48652B1E91CEE000194A85 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 8B48651D1E91CEE000194A85 /* main.js */; };
 		8B48652C1E91CEE000194A85 /* Moments.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B48651F1E91CEE000194A85 /* Moments.json */; };
 		8B4865321E91D13000194A85 /* TLLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4865311E91D13000194A85 /* TLLoginViewController.m */; };
+		8BDF923E1E95F39C008628F9 /* LoginPhoneDataEngineApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDF923D1E95F39C008628F9 /* LoginPhoneDataEngineApi.m */; };
+		8BE573731E961CA30000769A /* TLDBBaseStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE573721E961CA30000769A /* TLDBBaseStore.m */; };
+		8BE573771E961D2F0000769A /* TLDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE573761E961D2F0000769A /* TLDBManager.m */; };
+		8BE5737F1E9620BA0000769A /* NSFileManager+TLChat.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE5737E1E9620BA0000769A /* NSFileManager+TLChat.m */; };
+		8BE573821E962AE60000769A /* TLDBUserStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE573811E962AE60000769A /* TLDBUserStore.m */; };
 		8BFC42AD1E8E3ED30087423D /* KYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFC42AC1E8E3ED30087423D /* KYViewController.m */; };
 		8BFC42B41E8E418A0087423D /* UIColor+KYChat.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFC42B31E8E418A0087423D /* UIColor+KYChat.m */; };
 		8BFC42C31E8E473A0087423D /* KYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFC42C21E8E473A0087423D /* KYTableViewController.m */; };
@@ -207,6 +212,17 @@
 		8B48651F1E91CEE000194A85 /* Moments.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Moments.json; sourceTree = "<group>"; };
 		8B4865301E91D13000194A85 /* TLLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLLoginViewController.h; sourceTree = "<group>"; };
 		8B4865311E91D13000194A85 /* TLLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLLoginViewController.m; sourceTree = "<group>"; };
+		8BDF923C1E95F39C008628F9 /* LoginPhoneDataEngineApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginPhoneDataEngineApi.h; sourceTree = "<group>"; };
+		8BDF923D1E95F39C008628F9 /* LoginPhoneDataEngineApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginPhoneDataEngineApi.m; sourceTree = "<group>"; };
+		8BE573711E961CA30000769A /* TLDBBaseStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLDBBaseStore.h; sourceTree = "<group>"; };
+		8BE573721E961CA30000769A /* TLDBBaseStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLDBBaseStore.m; sourceTree = "<group>"; };
+		8BE573751E961D2F0000769A /* TLDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLDBManager.h; sourceTree = "<group>"; };
+		8BE573761E961D2F0000769A /* TLDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLDBManager.m; sourceTree = "<group>"; };
+		8BE5737D1E9620BA0000769A /* NSFileManager+TLChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+TLChat.h"; sourceTree = "<group>"; };
+		8BE5737E1E9620BA0000769A /* NSFileManager+TLChat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+TLChat.m"; sourceTree = "<group>"; };
+		8BE573801E962AE60000769A /* TLDBUserStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLDBUserStore.h; sourceTree = "<group>"; };
+		8BE573811E962AE60000769A /* TLDBUserStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLDBUserStore.m; sourceTree = "<group>"; };
+		8BE573831E96313B0000769A /* TLDBUserStoreSQL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLDBUserStoreSQL.h; sourceTree = "<group>"; };
 		8BFC42AB1E8E3ED30087423D /* KYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYViewController.h; sourceTree = "<group>"; };
 		8BFC42AC1E8E3ED30087423D /* KYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYViewController.m; sourceTree = "<group>"; };
 		8BFC42AF1E8E3FEF0087423D /* KYMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYMacros.h; sourceTree = "<group>"; };
@@ -332,6 +348,7 @@
 		55950B531E8426A100ECF74F /* KYChat */ = {
 			isa = PBXGroup;
 			children = (
+				8BE5736E1E961C3B0000769A /* Store/数据库 */,
 				8B08ABA71E922199008052E5 /* Business */,
 				8B08AB821E921B91008052E5 /* Proxys */,
 				8B48650C1E91CEE000194A85 /* Resources */,
@@ -392,6 +409,7 @@
 		55A8BADA1E91720B0064E7F5 /* http */ = {
 			isa = PBXGroup;
 			children = (
+				8BDF923A1E95F33E008628F9 /* DataEngineApi */,
 				55A8BADB1E91720B0064E7F5 /* Assistants */,
 				55A8BAEA1E91720B0064E7F5 /* BaseEngine */,
 				55A8BAED1E91720B0064E7F5 /* Categories */,
@@ -673,6 +691,72 @@
 			name = Reginster;
 			sourceTree = "<group>";
 		};
+		8BDF923A1E95F33E008628F9 /* DataEngineApi */ = {
+			isa = PBXGroup;
+			children = (
+				8BDF923B1E95F33E008628F9 /* login */,
+			);
+			name = DataEngineApi;
+			path = BaseEngine/DataEngineApi;
+			sourceTree = "<group>";
+		};
+		8BDF923B1E95F33E008628F9 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				8BDF923C1E95F39C008628F9 /* LoginPhoneDataEngineApi.h */,
+				8BDF923D1E95F39C008628F9 /* LoginPhoneDataEngineApi.m */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		8BE5736E1E961C3B0000769A /* Store/数据库 */ = {
+			isa = PBXGroup;
+			children = (
+				8BE573741E961D0D0000769A /* Expression */,
+				8BE573701E961C6F0000769A /* Base */,
+				8BE5736F1E961C3B0000769A /* User */,
+			);
+			name = "Store/数据库";
+			path = Store;
+			sourceTree = "<group>";
+		};
+		8BE5736F1E961C3B0000769A /* User */ = {
+			isa = PBXGroup;
+			children = (
+				8BE573801E962AE60000769A /* TLDBUserStore.h */,
+				8BE573811E962AE60000769A /* TLDBUserStore.m */,
+				8BE573831E96313B0000769A /* TLDBUserStoreSQL.h */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		8BE573701E961C6F0000769A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8BE573711E961CA30000769A /* TLDBBaseStore.h */,
+				8BE573721E961CA30000769A /* TLDBBaseStore.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		8BE573741E961D0D0000769A /* Expression */ = {
+			isa = PBXGroup;
+			children = (
+				8BE573751E961D2F0000769A /* TLDBManager.h */,
+				8BE573761E961D2F0000769A /* TLDBManager.m */,
+			);
+			path = Expression;
+			sourceTree = "<group>";
+		};
+		8BE5737C1E9620770000769A /* DataUtilites */ = {
+			isa = PBXGroup;
+			children = (
+				8BE5737D1E9620BA0000769A /* NSFileManager+TLChat.h */,
+				8BE5737E1E9620BA0000769A /* NSFileManager+TLChat.m */,
+			);
+			name = DataUtilites;
+			sourceTree = "<group>";
+		};
 		8BFC429F1E8E3D320087423D /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -791,6 +875,7 @@
 		8BFC42B01E8E411B0087423D /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				8BE5737C1E9620770000769A /* DataUtilites */,
 				55A8BAD91E91720B0064E7F5 /* NetworkUtilities */,
 				8BFC42B11E8E411B0087423D /* UIUtilities */,
 			);
@@ -1278,7 +1363,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1291,10 +1376,12 @@
 				55A8BB131E91720B0064E7F5 /* NSObject+YANetWorkingAutoCancel.m in Sources */,
 				8BFC43211E8E562A0087423D /* UIImagePickerController+Fixed.m in Sources */,
 				8B08AB7E1E91FFCF008052E5 /* TLAccountViewController.m in Sources */,
+				8BDF923E1E95F39C008628F9 /* LoginPhoneDataEngineApi.m in Sources */,
 				8BFC42C61E8E49B20087423D /* KYConversationViewController.m in Sources */,
 				55A8BB1C1E91720B0064E7F5 /* CheckAppStroeDataEngine.m in Sources */,
 				55A8BB181E91720B0064E7F5 /* YAServer.m in Sources */,
 				8BFC43271E8E562A0087423D /* UIView+Extensions.m in Sources */,
+				8BE5737F1E9620BA0000769A /* NSFileManager+TLChat.m in Sources */,
 				8BFC431A1E8E562A0087423D /* NSFileManager+Paths.m in Sources */,
 				8B08ABA31E921E27008052E5 /* TLUserGroup.m in Sources */,
 				55A8BB0B1E91720B0064E7F5 /* customSecurityPolocy.m in Sources */,
@@ -1320,10 +1407,13 @@
 				55A8BB121E91720B0064E7F5 /* YABaseDataEngine.m in Sources */,
 				8BFC42E41E8E53160087423D /* KYNavigationController.m in Sources */,
 				8BFC42D41E8E4B8B0087423D /* KYMineViewController.m in Sources */,
+				8BE573821E962AE60000769A /* TLDBUserStore.m in Sources */,
+				8BE573731E961CA30000769A /* TLDBBaseStore.m in Sources */,
 				8BFC42AD1E8E3ED30087423D /* KYViewController.m in Sources */,
 				8BFC42B41E8E418A0087423D /* UIColor+KYChat.m in Sources */,
 				55A8BB1D1E91720B0064E7F5 /* TLNetworking.m in Sources */,
 				8BFC43231E8E562A0087423D /* UINavigationController+StackManager.m in Sources */,
+				8BE573771E961D2F0000769A /* TLDBManager.m in Sources */,
 				8B08AB961E921DE1008052E5 /* TLBaseProxy.m in Sources */,
 				8BFC43181E8E562A0087423D /* NSDate+Extension.m in Sources */,
 				8B08ABA01E921E27008052E5 /* TLUserDetail.m in Sources */,

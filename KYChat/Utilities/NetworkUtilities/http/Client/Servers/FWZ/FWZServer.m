@@ -13,7 +13,7 @@
 
 - (NSString *)developApiBaseUrl {
     if (_developApiBaseUrl == nil) {
-        _developApiBaseUrl = @"http://hongren.bingjun.cn/";  //@"http://hongren.bingjun.cn/"
+        _developApiBaseUrl = @"http://mobile.fingerchat.cn:8090/";  //@"http://hongren.bingjun.cn/"
     }
     return _developApiBaseUrl;
 }

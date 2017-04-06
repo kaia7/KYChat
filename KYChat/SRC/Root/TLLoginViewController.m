@@ -7,6 +7,7 @@
 //
 
 #import "TLLoginViewController.h"
+#import "LoginPhoneDataEngineApi.h"
 //#import "TLRootProxy.h"
 
 #define     HEIGHT_ITEM     45.0f
@@ -32,6 +33,8 @@
 @property (nonatomic, strong) UITextField *passwordTextField;
 
 @property (nonatomic, strong) UIButton *loginButton;
+
+@property (nonatomic, strong) YABaseDataEngine *loginApi;
 
 @end
 
@@ -85,16 +88,30 @@
 
 - (void)loginButtonClicked
 {
-    NSString *phoneNumber = self.phoneNumberTextField.text;
-    if (phoneNumber.length != 11 && ![phoneNumber hasPrefix:@"1"]) {
-        [SVProgressHUD showErrorWithStatus:@"请输入正确的手机号"];
-        return;
-    }
+//    NSString *phoneNumber = self.phoneNumberTextField.text;
+//    if (phoneNumber.length != 11 && ![phoneNumber hasPrefix:@"1"]) {
+//        [SVProgressHUD showErrorWithStatus:@"请输入正确的手机号"];
+//        return;
+//    }
     NSString *password = self.passwordTextField.text;
     
-    [SVProgressHUD show];
-//    TLRootProxy *proxy = [[TLRootProxy alloc] init];
+    
     KYWeakSelf(self);
+    [SVProgressHUD show];
+    self.loginApi = [LoginPhoneDataEngineApi control:self phoneNumber:@"" passWord:@"" complete:^(id data, NSError *error) {
+        if (error) {
+            
+            [SVProgressHUD showErrorWithStatus:error.localizedDescription];
+        } else {
+            [SVProgressHUD dismiss];
+            if (weakself.loginSuccess) {
+                weakself.loginSuccess();
+            }
+        }
+    }];
+    
+//    TLRootProxy *proxy = [[TLRootProxy alloc] init];
+
 //    [proxy userLoginWithPhoneNumber:phoneNumber password:password success:^(id datas) {
 //        [SVProgressHUD dismiss];
 //        if (weakself.loginSuccess) {

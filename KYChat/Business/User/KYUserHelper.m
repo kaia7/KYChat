@@ -8,6 +8,7 @@
 //
 
 #import "KYUserHelper.h"
+#import "TLDBUserStore.h"
 
 @implementation KYUserHelper
 @synthesize user = _user;
@@ -42,25 +43,24 @@
 - (void)setUser:(TLUser *)user
 {
     _user = user;
-//    TLDBUserStore *userStore = [[TLDBUserStore alloc] init];
-//    if (![userStore updateUser:user]) {
-//        DDLogError(@"登录数据存库失败");
-//    }
-    
+    TLDBUserStore *userStore = [[TLDBUserStore alloc] init];
+    if (![userStore updateUser:user]) {
+        DDLogError(@"登录数据存库失败");
+    }
     [[NSUserDefaults standardUserDefaults] setObject:user.userID forKey:@"loginUid"];
 }
 
 - (TLUser *)user
 {
-//    if (!_user) {
-//        if (self.userID.length > 0) {
-//            TLDBUserStore *userStore = [[TLDBUserStore alloc] init];
-//            _user = [userStore userByID:self.userID];
-//            if (!_user) {
-//                [[NSUserDefaults standardUserDefaults] setObject:@"" forKey:@"loginUid"];
-//            }
-//        }
-//    }
+    if (!_user) {
+        if (self.userID.length > 0) {
+            TLDBUserStore *userStore = [[TLDBUserStore alloc] init];
+            _user = [userStore userByID:self.userID];
+            if (!_user) {
+                [[NSUserDefaults standardUserDefaults] setObject:@"" forKey:@"loginUid"];
+            }
+        }
+    }
     return _user;
 }
 

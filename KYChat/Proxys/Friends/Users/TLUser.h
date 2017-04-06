@@ -34,6 +34,39 @@
 /// 界面显示名称
 @property (nonatomic, strong, readonly) NSString *showName;
 
+#pragma mark # add by kky
+/// 界面显示名称
+@property (nonatomic, copy) NSString *DptName;
+
+@property (nonatomic, copy) NSString * DptNo;
+
+@property (nonatomic, copy) NSString *EmpIDNo;
+
+@property (nonatomic, copy) NSString *EmpName;
+
+@property (nonatomic, copy) NSString *EmployeeNO;
+
+@property (nonatomic, copy) NSString *TitName;
+
+@property (nonatomic, copy) NSString *TitNo;
+
+@property (nonatomic, copy) NSString *USR_Name;
+
+@property (nonatomic, copy) NSString *USR_PWD;
+
+@property (nonatomic, copy) NSString *USR_Phone;
+
+@property (nonatomic, copy) NSString *hasPC;
+
+@property (nonatomic, copy) NSString *isValid;
+
+@property (nonatomic, copy) NSString *jobNo;
+
+@property (nonatomic, copy) NSString *jobname;
+
+@property (nonatomic, copy) NSString *upCerImg;
+
+
 
 #pragma mark - 其他
 @property (nonatomic, strong) TLUserDetail *detailInfo;
