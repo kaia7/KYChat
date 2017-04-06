@@ -28,6 +28,7 @@
     
     [self p_initThirdPartSDK];      // 初始化第三方SDK
     [self k_initUI];                // 初始化UI
+#pragma mark #  - private METhod
 
     
     return YES;
